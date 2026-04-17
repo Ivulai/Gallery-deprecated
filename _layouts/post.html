@@ -13,11 +13,11 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{page.title}} -  Lain62's Gallery">
     <meta property="og:description" content="Lain62's art collections archive">
-    <meta property="og:image" content="{{page.art | relative_url }}" />
-    <meta property="og:url" content="{{site.url}}{{page.url | relative_url}}" />
-    
+    <meta property="og:image" content="{{page.art }}" />
+    <meta property="og:url" content="{{site.url}}{{page.url}}" />
+
     <title>{{page.title}} - Lain62's Gallery</title>
-    <link rel="stylesheet" href="{{'/assets/css/styles.css' | relative_url}}">
+    <link rel="stylesheet" href="{{'/assets/css/styles.css'}}">
 </head>
 <body>
     <main>
@@ -26,7 +26,7 @@
             <h1></h1>
             <div id="post">
                 <a class="post-back" onclick="window.history.back()">Back to art</a>
-                <img class="post-art" src="{{page.art | relative_url }}"/>
+                <img class="post-art" src="{{page.art}}"/>
                 {{ content }}
             </div>
             <div class="pagination-div"></div>
